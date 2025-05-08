@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CYBERGAME</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href=".././css/laptops.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <class class="logito">
+     <img src=".././Img/IMG/logoInnoTech.svg" alt="logoInnoTech" />
+    </class>
+    </div>
+    <input type="text" placeholder="Buscar laptops, accesorios...">
+    <nav>
+      <ul>
+        <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./paginas/laptops.html">ACCESORIOS</a></li>
+          <li><a href="./paginas/ofertas.html">OFERTAS</a></li>
+          <li><a href="./paginas/contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="icon-container">
+      <span id="location-icon" class="material-icons">location_on</span>
+      <div>
+        <div class="cart-icon" id="cartIcon">
+          <span class="material-icons">shopping_cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+          <!-- contador inicia en cero-->
+        </div>
+      </div>
+      <a href="/Paginas/iniciarsesion.html">
+      <span class="material-icons">account_circle</span>
+    </a>
+    </div>
+  </header>
+
+  <!-- Carrusel de Promoción -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <h2>🎉 48 Horas de MegaOfertas</h2>
+      <p>Hasta <strong>30% de descuento</strong> en laptops seleccionadas</p>
+      <p class="coupon">Usa el cupón: <strong>TECH30</strong></p>
+    </div>
+    <div class="promo-carousel">
+      <div class="carousel-track">
+        <img src="/img/laoptopOferta1.png" alt="Oferta Laptop 1" />
+        <img src="/img/audifonosgaming.png" alt="Oferta Auriculares" />
+        <img src="/img/teclado.png" alt="Oferta Teclado" />
+        <img src="/img/setupoferta1.png" alt="Oferta Setup" />
+        <img src="/img/laoptopOferta2.png" alt="Oferta Laptop 2" />
+        <img src="/img/laoptopOferta3.png" alt="Oferta Laptop 3" />
+        <img src="/img/laoptopOferta4.png" alt="Oferta Laptop 4" />
+        <img src="/img/laoptopOferta5.png" alt="Oferta Laptop 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Principal -->
+  <section class="banner">
+    <div class="banner-item">
+      <img src="/img/laptoptrabajo.png" alt="Laptop trabajando" />
+    </div>
+    <div class="banner-item">
+      <img src="/img/laoptopOferta2.png" alt="Laptop oficina" />
+    </div>
+    <div class="banner-item">
+      <img src="/img/setupoferta1.png" alt="Setup completo" />
+    </div>
+  </section>
+
+  <!-- Categorías -->
+  <section class="categories">
+    <div class="category-item">🖥 Laptops Gaming</div>
+    <div class="category-item">🧰 Accesorios</div>
+    <div class="category-item">📱 Tablets</div>
+    <div class="category-item">🔋 Power Banks</div>
+    <div class="category-item">🎧 Auriculares</div>
+  </section>
+  <!-- Lista de Productos -->
+<main>
+  <div id="lista-cursos" class="container">
+    <h1 class="encabezado">Productos Destacados</h1>
+    <div class="row">
+      <div class="four columns">
+        <div class="card">
+          <img src="/img/ultabook1.png" class="imagen-curso u-full-width" alt="Laptop Ultrabook">
+          <div class="info-card">
+            <h4>Laptop Ultrabook</h4>
+            <img src="/img/estrellas.png" alt="Estrellas">
+            <p class="precio">
+              <span class="precio-original">S/ 2,999.00</span>
+              <span class="precio-descuento">S/ 2,599.00</span>
+            </p>
+            <a href="#" class="button-primary agregar-carrito" data-id="101">Agregar Al Carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; 2025 CGTech. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Categorías -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Imágenes de la categoría</h2>
+      <div id="modal-images"></div>
+    </div>
+  </div>
+
+  <!-- Modal de Ubicación con Mapa -->
+  <div id="location-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" data-close="location-modal">&times;</span>
+      <h2>Tu Ubicación</h2>
+      <div id="map-container">
+        <div id="leaflet-map" style="height: 300px; border-radius: 8px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src=".././js/categorias.js"></script>
+  <script src=".././js/laptops.js"></script>
+  <script > 
+    const track = document.querySelector('.carousel-track');
+    const carousel = document.querySelector('.promo-carousel');
+
+    carousel.addEventListener('mouseover', () => {
+      track.style.animationPlayState = 'paused';
+    });
+    carousel.addEventListener('mouseout', () => {
+      track.style.animationPlayState = 'running';
+    });
+
+    // Inicialización del mapa Leaflet
+    document.getElementById('location-icon').addEventListener('click', () => {
+      document.getElementById('location-modal').style.display = 'block';
+      const map = L.map('leaflet-map').setView([-12.0464, -77.0428], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+      L.marker([-12.0464, -77.0428]).addTo(map)
+        .bindPopup('¡Estamos aquí!')
+        .openPopup();
+    });
+
+    document.querySelectorAll('.close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.modal').style.display = 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

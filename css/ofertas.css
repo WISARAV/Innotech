@@ -1,0 +1,164 @@
+/* Contenedor general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Menú de navegación */
+  .menu {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .menu .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #00ffff;
+  }
+  
+  /* Banner */
+  .banner-promo {
+    background: linear-gradient(90deg, #1a1a1a, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .banner-promo h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .banner-promo .btn-cupon {
+    display: inline-block;
+    background-color: #00cc99;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Marcas */
+  header img {
+    margin: 0.5rem;
+    height: 60px;
+  }
+  
+  /* Layout principal */
+  .container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Filtros */
+  .filters {
+    flex: 1;
+    min-width: 200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .filters h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  /* Productos */
+  .products {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h4 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    color: #008000;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  .button-primary {
+    background-color: #00c3ff;
+    color: #000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .button-primary:hover {
+    background-color: #00a2cc;
+  }
+  

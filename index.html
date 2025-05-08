@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Tecnología</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles2.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./Img/IMG/logoInnoTech.svg" alt="logoInnoTech" />
+      </div>
+
+      <input
+        type="text"
+        placeholder="Buscar laptops, accesorios..."
+        id="input-search"
+      />
+      <button class="btn-search" id="BTN-SEARCH">BUSCAR</button>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./paginas/laptops.html">ACCESORIOS</a></li>
+          <li><a href="./paginas/ofertas.html">OFERTAS</a></li>
+          <li><a href="./paginas/productos.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon-container">
+        <span class="material-icons">location_on</span>
+        <div>
+          <div class="cart-icon" id="cartIcon">
+            <span class="material-icons">shopping_cart</span>
+            <span class="cart-count" id="cartCount">0</span>
+            <!-- contador inicia en cero-->
+          </div>
+        </div>
+        <a href="/paginas/iniciarsesion.html">
+        <span class="material-icons">account_circle</span>
+      </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Sección de promoción con carrusel -->
+
+      <section class="promo-banner">
+        <div class="promo-content">
+          <h2>🔥 48 Horas de MegaOfertas</h2>
+          <p>
+            Hasta <strong>30% de descuento</strong> en laptops seleccionadas
+          </p>
+          <button class="btn-cupon">
+            Usa el cupón: <strong>TECH30</strong>
+          </button>
+        </div>
+
+        <div class="promo-carousel">
+          <div class="carousel-track">
+            <img src="./img/img1/sillasgaming.webp" alt="Oferta Laptop 1" />
+            <img src="./img/img1/audifonosgaming.webp" alt="Oferta Auriculares" />
+            <img src="./img/img1/procesador.webp" alt="Oferta Teclado" />
+            <img src="./img/img1/sisenfriamiento.webp" alt="ofertas" />
+            <img src="./img/img1/tarjetas-graficas.webp" alt="ofertas" />
+            <img src="./img/img1/tecladoled.webp" alt="ofertas" />
+            <img src="./img/img1/VRSERIES.webp" alt="ofertas" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner principal -->
+      <section class="banner">
+        <div class="banner-item">
+          <img
+            src="./img/img1/banner2-teclado.webp"
+            alt="Teclado Gamer"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="./img/img1//banner3callofduty.webp"
+            alt="Mandos Gamer"
+          />
+        </div>
+        <div class="banner-item">
+          <img
+            src="./img/img1//banner5-Lider-Computer-Portafolio-ROG.jpg"
+            alt="Mouse"
+          />
+        </div>
+      </section>
+
+      <!-- Categorías rápidas -->
+      <section class="categories">
+        <div class="category-item"><h2>NUESTRO CATÁLOGO</h2></div>
+      </section>
+      <!-- Productos -->
+      <section class="products" id="products-cards">
+        
+          <div class="product-item">
+            <img
+              src=".//img/img1/EXtras/mouse-optico-microsoft-basic-optical.jpg"
+              alt="Mouse Optico"
+              class="product-image"
+            />
+            <h3 class="product-title">Mouse Optico</h3>
+            <p class="product-price">S/ 40.00</p>
+            <button class="add-to-cart" data-id="1" data-price="40.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/EXtras/mouse-inalambrico.jpg"
+              alt="Mouse Inalambrico"
+              class="product-image"
+            />
+            <h3 class="product-title">Mouse Inalambrico</h3>
+            <p class="product-price">S/ 69.00</p>
+            <button class="add-to-cart" data-id="2" data-price="69.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/audifonosgaming.webp"
+              alt="Auriculares Gaming HiFi"
+              class="product-image"
+            />
+            <h3 class="product-title">Auriculares Gaming HiFi</h3>
+            <p class="product-price">S/ 259.00</p>
+            <button class="add-to-cart" data-id="3" data-price="259.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/EXtras/tecladoMecanico.png"
+              alt="Teclado Mecanico"
+              class="product-image"
+            />
+            <h3 class="product-title">Teclado Mecanico</h3>
+            <p class="product-price">S/ 185.00</p>
+            <button class="add-to-cart" data-id="4" data-price="185.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/monitores.webp"
+              alt="Monitor HD"
+              class="product-image"
+            />
+            <h3 class="product-title">Monitor HD</h3>
+            <p class="product-price">S/ 599.00</p>
+            <button class="add-to-cart" data-id="5" data-price="599.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/laptopProgamer.jpg"
+              alt="Laptop Pro Gamer"
+              class="product-image"
+            />
+            <h3 class="product-title">Laptop Pro Gamer</h3>
+            <p class="product-price">S/ 2,999.00</p>
+            <button class="add-to-cart" data-id="6" data-price="2999.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1//laptoprazer-blade-16-gaming-laptop-nvidia.jpg"
+              alt="Laptop Razer Blade"
+              class="product-image"
+            />
+            <h3 class="product-title">Laptop Razer Blade</h3>
+            <p class="product-price">S/ 3,799.00</p>
+            <button class="add-to-cart" data-id="7" data-price="3799.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/laptopUltrabook.jpg"
+              alt="Laptop Gamer Lenovo"
+              class="product-image"
+            />
+            <h3 class="product-title">Laptop Gaming Lenovo</h3>
+            <p class="product-price">S/ 2,559.00</p>
+            <button class="add-to-cart" data-id="8" data-price="2559.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/laptopRazerGaming.jpg"
+              alt="Laptop Gamer Lenovo"
+              class="product-image"
+            />
+            <h3 class="product-title">Laptop Gaming Razer</h3>
+            <p class="product-price">S/ 4,329.00</p>
+            <button class="add-to-cart" data-id="9" data-price="4329.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/pc-gamer-samsung.webp"
+              alt="Computadora Gaming Samsung"
+              class="product-image"
+            />
+            <h3 class="product-title">Computadora Gaming Samsung</h3>
+            <p class="product-price">S/ 1,929.00</p>
+            <button class="add-to-cart" data-id="10" data-price="1929.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/PCVENGEANCE_7500.avif"
+              alt="PC Vengeance 7500"
+              class="product-image"
+            />
+            <h3 class="product-title">PC Vengeance 7500</h3>
+            <p class="product-price">S/ 4,890.00</p>
+            <button class="add-to-cart" data-id="11" data-price="4890.00">
+              Agregar al carrito
+            </button>
+          </div>
+          <div class="product-item">
+            <img
+              src="./img/img1/sillasgaming.webp"
+              alt="PC Vengeance 7500"
+              class="Silla Gaming"
+            />
+            <h3 class="product-title">Silla Gaming</h3>
+            <p class="product-price">S/ 1,590.00</p>
+            <button class="add-to-cart" data-id="12" data-price="1590.00">
+              Agregar al carrito
+            </button>
+          </div>
+      </section>
+    </main>
+
+    <!-- Carrito de compras -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-header">
+        <h2>Tus Productos Seleccionados</h2>
+        <button class="close-cart" id="closeCart">&times;</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <!-- Los items del carrito se añadirán aquí dinámicamente -->
+        <p class="empty-cart-message">Tu carrito está vacío</p>
+      </div>
+
+      <div class="cart-total" id="cartTotal">Total: $0.00</div>
+
+      <button class="checkout-btn">Proceder al pago</button>
+    </div>
+    <footer>
+      <p>&copy; 2025 InnoTech. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

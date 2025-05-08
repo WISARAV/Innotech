@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | CGTech</title>
+  <link rel="stylesheet" href="/css/contacto.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Header con iconos -->
+<header>
+  <div class="logo">
+    <div class="logito">
+    <img src=".././Img/IMG/logoInnoTech.svg" alt="InnoTech" />
+  </div>
+  </div>
+  <input type="text" placeholder="Buscar laptops, accesorios...">
+  <nav>
+    <ul>
+      <li><a href="./index.html">INICIO</a></li>
+          <li><a href="/paginas/laptops.html">ACCESORIOS</a></li>
+          <li><a href="/paginas/ofertas.html">OFERTAS</a></li>
+          <li><a href="/paginas/contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <div class="icon-container">
+    <span class="material-icons" id="img-carrito">shopping_cart</span>
+    <div id="carrito">
+      <table id="lista-carrito" class="u-full-width">
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cant.</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+    </div>
+  </div>
+  <a href="/Paginas/iniciarsesion.html">
+    <span class="material-icons">account_circle</span>
+  </a>
+</header>
+
+<!-- Ventana Modal para la ubicación -->
+<div id="location-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-location">&times;</span>
+    <h2>Ingresa tu ubicación</h2>
+    <input type="text" id="location" placeholder="Escribe tu ubicación">
+    <button id="save-location">Guardar</button>
+  </div>
+</div>
+
+<!-- Ventana Modal para Yape -->
+<div id="shopping-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-shopping">&times;</span>
+    <h2>Pagar con Yape</h2>
+    <p>Escanea el código QR para pagar con Yape</p>
+    <img src="https://via.placeholder.com/200x200?text=QR+Yape" alt="QR Yape">
+    <button id="close-shopping-modal">Cerrar</button>
+  </div>
+</div>
+
+<!-- Ventana Modal para Iniciar Sesión -->
+<div id="account-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-account">&times;</span>
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+</div>
+
+<!-- Sección de Contacto -->
+<main>
+  <section class="contact-section">
+    <h2>📞 Contáctanos</h2>
+    <p>¿Tienes preguntas? ¡Escríbenos y te responderemos lo antes posible!</p>
+    
+    <form class="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <div class="contact-info">
+      <p><span class="material-icons">location_on</span> Lima, Perú</p>
+      <p><span class="material-icons">email</span> contacto@cgtech.com</p>
+      <p><span class="material-icons">call</span> +51 987 654 321</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 CYBERGAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="/js/contacto.js"></script>
+</body>
+</html>
