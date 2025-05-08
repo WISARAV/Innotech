@@ -63,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const categorias = document.querySelectorAll('.category-item');
     const imagesMap = {
       '🖥 Laptops Gaming': ['/Img/laptop1.jpg', '/Img/laptop2.jpg'],
-      '🧰 Accesorios':        ['/Img/accesorio1.jpg', '/Img/accesorio2.jpg'],
-      '📱 Tablets':           ['/Img/tablet1.jpg', '/Img/tablet2.jpg'],
-      '🔋 Power Banks':       ['/Img/power1.jpg', '/Img/power2.jpg'],
-      '🎧 Auriculares':       ['/Img/auricular1.jpg', '/Img/auricular2.jpg']
+      '🧰 Accesorios':        ['../img/accesorio1.jpg', '../img/accesorio2.jpg'],
+      '📱 Tablets':           ['../img/tablet1.jpg', '../img/tablet2.jpg'],
+      '🔋 Power Banks':       ['../img/power1.jpg', '../img/power2.jpg'],
+      '🎧 Auriculares':       ['../img/auricular1.jpg', '/../img/auricular2.jpg']
     };
   
     categorias.forEach(cat => {

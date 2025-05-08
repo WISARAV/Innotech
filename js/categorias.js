@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeModal = document.querySelector('.close');
   
     const imagenesPorCategoria = {
-      "🖥 Laptops Gaming": ["/Img/acer1.png", "/Img/asus2.png"],
-      "🧰 Accesorios":     ["/Img/audifonosgaming.png", "/Img/teclado.png"],
-      "📱 Tablets":       ["/Img/hp1.png", "/Img/hp2.png"],
-      "🔋 Power Banks":   ["/Img/setupoferta1.png", "/Img/ultabook1.png"],
-      "🎧 Auriculares":    ["/Img/lenovo1.png", "/Img/lenovo2.png"]
+      "🖥 Laptops Gaming": ["../img/acer1.png", "../img/asus2.png"],
+      "🧰 Accesorios":     ["../img/audifonosgaming.png", "../img/teclado.png"],
+      "📱 Tablets":       ["../img/hp1.png", "/Img/hp2.png"],
+      "🔋 Power Banks":   ["../img/setupoferta1.png", "../img/ultabook1.png"],
+      "🎧 Auriculares":    ["../img/lenovo1.png", "../img/lenovo2.png"]
     };
     
     // Crear un contenedor general si aún no lo tienes
